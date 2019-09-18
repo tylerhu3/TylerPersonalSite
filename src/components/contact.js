@@ -20,7 +20,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div id = "theRing2" className="contact-body">
+      <div id = "theRing" className="contact-body">
         <Grid className="contact-grid" style= {{ textAlign: "center"}}>
           <Cell col={6}>
             <h2>Tyler Hu</h2>
@@ -30,7 +30,7 @@ class Contact extends Component {
               style={{ height: "250px" }}
             />
             <p style={{ width: "74%", margin: "auto", paddingTop: "1em" }}>
-              Recently graduated from University of California, Santa Cruz with a BS in Computer Science and a seven-year veteran from the United States Air Force. I believe my discipline, attention to detail, academic strengths, and passion for creative solutions will be a positive addition to your company.
+              Recently graduated from University of California, Santa Cruz with a BS in Computer Science. 
             </p>
           </Cell>
           <Cell col={6}>
@@ -45,7 +45,7 @@ class Contact extends Component {
                 <ListItem>
                   <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
                   >
-                    <i class="fas fa-phone-square-alt" aria-hidden="true" />
+                    <i  class="fas fa-phone-square-alt" aria-hidden="true" />
                       (510) 701-7525   
                   </ListItemContent>  
                 </ListItem>

@@ -44,10 +44,10 @@ class Resume extends Component {
             <Skills skill="Javascript" progress={80} />
             <Skills skill="HTML/CSS" progress={75} />
             <Skills skill="NodeJS" progress={70} />
-            <Skills skill="MySQL" progress={68} />
-            <Skills skill="Express" progress={65} />
-            <Skills skill="MongoDB/NoSQL" progress={63} />
-            <Skills skill="React" progress={45} />
+            <Skills skill="MySQL" progress={70} />
+            <Skills skill="Express" progress={70} />
+            <Skills skill="React" progress={60} />
+            <Skills skill="MongoDB/NoSQL" progress={50} />
           </Cell>
 
           <Cell className="resume-right-col" col={8}>
