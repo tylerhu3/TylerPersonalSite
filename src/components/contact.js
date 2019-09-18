@@ -20,7 +20,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div id = "theRing" className="contact-body">
+      <div id = "theRing2" className="contact-body">
         <Grid className="contact-grid" style= {{ textAlign: "center"}}>
           <Cell col={6}>
             <h2>Tyler Hu</h2>
