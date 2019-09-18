@@ -12,6 +12,8 @@ To run the website locally:
 
 
 Below is additional additional information created by default by Create React App
+
+<br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
