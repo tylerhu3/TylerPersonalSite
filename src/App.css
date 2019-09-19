@@ -1,5 +1,5 @@
 /*
-4
+Tip:
 
 tag.class matches all elements with name tag and with the class class, 
 e.g.:
@@ -7,8 +7,9 @@ e.g.:
 div.foo { color: red; } matches <div class="foo">
 
 tag .class matches all .class elements that are descendants
- of tag elements (note the space between tag and .class):
-*/
+of tag elements (note the space between tag and .class):
+
+ */
 
 .drawerColor{
 background: #373B44;  /* fallback for old browsers */

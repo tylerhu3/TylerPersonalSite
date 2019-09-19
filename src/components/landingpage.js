@@ -1,3 +1,22 @@
+/*
+Landing page Last updated: 09/19/2019
+This is the page the website goes to when first accessed.
+Theres some things to note here
+1) This thing detects the size of the window of the device using :
+this.state = {
+      width: window.innerWidth
+    };
+2) componentWillMount()
+3)handleWindowSizeChange()
+
+The Variable this this.state is updated everytime the window size is changed
+to basically ammend for the initial issue I had of adjusting the fontAwesome Icons
+
+Additionally, the effect for the site is set on first launch, it will either be
+the the Net effect or the Waves effect from VantaJS. This is dependent on the windows
+size.
+*/
+
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 class Landing extends Component {

@@ -11,8 +11,20 @@ import {
 class Contact extends Component {
   constructor() {
     super();
+    this.state = {
+      width: window.innerWidth
+    };
     this.myRef = React.createRef();
   }
+
+  componentWillMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   componentDidMount() {
     this.effect = window.VANTA.RINGS({
       el: "#theRing",
@@ -25,10 +37,11 @@ class Contact extends Component {
   componentWillUnmount() {
     if (this.effect) this.effect.destroy();
   }
-  render() {
+
+  contactAbstracted(){
     return (
-      <div id="theRing" style={{ width: "100%", height: "100%" }}>
-        <Card
+      <div>
+         <Card
           shadow={10}
           style={{
             marginTop: "5%",
@@ -93,8 +106,25 @@ class Contact extends Component {
             </Cell>
           </Grid>
         </Card>
+        </div>
+    )
+  }
+  render() {
+
+    const { width } = this.state;
+    const isMobile = width <= 700;
+    if(isMobile){
+    return (
+      <div id="theRing" style={{ width: "100%", height: "100%", marginTop: "18%"}}>
+      {this.contactAbstracted()}
       </div>
     );
+  }
+  return (
+    <div id="theRing" style={{ width: "100%", height: "100%"}}>
+      {this.contactAbstracted()}
+      </div>
+  )
   }
 }
 export default Contact;
