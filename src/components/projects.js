@@ -232,7 +232,7 @@ class Projects extends Component {
                 <i style={{color: "purple"}} class="fas fa-exclamation-circle"></i> Installation Notes
                 </h5>
                 <p>
-                  If you are planning to installing the APK files, you will need "EZ File Explorer" from the Play store,
+                  If you are planning to installing the APK files on your android phone, you will need "EZ File Explorer" from the Play store,
                   once you have it,  all you have to do is get these files on to your phone and open the files with EZ file
                   Explorer. After which, the files should install properly. 
                   

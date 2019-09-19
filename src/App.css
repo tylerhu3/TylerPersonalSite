@@ -63,10 +63,10 @@ background-position: center center;              /* optional, center the image *
 
 /*contact page css*/
 .contact-body {
-  background-image: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&auto=format&fit=crop&w=3150&q=80");
-  background-size:     cover;                      /* <------ */
+  /* background-image: url("");
+  background-size:     cover;                   
   background-repeat:   no-repeat;
-  background-position: center center;              /* optional, center the image */
+  background-position: center center;              */
   font-family: "Oxygen";
   margin: auto;
   position: fixed;
@@ -118,7 +118,7 @@ font-size: 35px;
 }
 
 .contact-list i {
-  font-size: 50px;
+  font-size: 30px;
   padding-right: 2rem;
 }
 
@@ -130,7 +130,6 @@ font-size: 35px;
 }
 
 .banner-text {
-  /* background-color: black; */
   opacity: 0.8;
   width: 75%;
   margin: auto;
@@ -138,7 +137,7 @@ font-size: 35px;
 }
 
 
-.banner-text h1 {
+.banner-text h2 {
   font-size: 66px;
   font-weight: bold;
   color: white;

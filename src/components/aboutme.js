@@ -14,7 +14,7 @@ class About extends Component {
           >
             <div style={{ textAlign: "center", margin: "10px"}}>
               <img
-                src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png"
+                src="https://lh3.googleusercontent.com/pf3dPcWyfAkl20Ftzq0Fqr_SI069iPxafl0zq8LNnOxDxZxiOXSBsEpbodIltEIGLavSXT82BzHwokn1T7SL3BxUXMFJJZ0qNJ8gJOYti-K9VCDSL0a8op2I8QgC62V42JTr1YIXseZL5IYNfkL64EM0FxNbYSbmzVlBpoU99iiLobenVpYO1UfB-TY2-giOz3-El40FJKjcCQiWz4HkLB4viC3sv6Wd9eEXFRyPbDGu2G6p2yosFZBtuN1Kl6JHREl0sKpXxUmROxM4XuwGuhJGGJLkfaXVUraue3tKe04BDbwKnWKv0cA4V9GplcErfCkytKZs_ITQ9scWBj5zQbFEIvKThsh-JsmUYM18__4eZ7zm7CTBCgNirCHLFvPAGK_goT8FZjyfnGpXpaq2wNjOrDxanyu3skJhLfRnK9xRijQllV87vkaujA7pHO72Nggr_MuFhiuFrmaSswpmDiQr1FZAtb8YYHnaI42-s0Hr2NI8kuizzM8DRPmHzn7qVNj7Qb_bHVoQLz2Fh3cs3Q1GByQBlip8LAL1sUxB3w13wrDRuQxT3bpsJytfO9PPzGBHYuthVFhc8AQWv-w1iuj12czYZ_M2n4nEsQ8HMHCAI2ErW9RssQLsIV__5aQqxHjJxZ2x5Kpw-aw53rJ6ax1eempZudkEFWul1UpJMV4gLBLaB8e_-Ahh=s387-no"
                 alt="avatar"
                 style={{ marginTop: "20px ", height: "200px" }}
               />
@@ -27,36 +27,20 @@ class About extends Component {
               <p>
                 Before I got my Computer Science Degree from UC Santa Cruz, I
                 served in the US Air Force. I was in from 2007 to 2014 when I
-                enlistment was expired. While in service, I gain a lot
-                of valuable experience. Not only did I get the chance to serve
-                my country but I also had the opportunity to travel and work in
-                many different countries where I met people from all walks of
-                life. And I think one of the greatest joys of life is enjoying a
-                facinating conversation with a stranger and I feel you can learn
-                some many things from just sincerely trying to get to know
-                someone.
-              </p>
-              <p>
+                enlistment was expired. 
                 On my off days, I typically like to enjoy a cup of coffee with a
                 friend or go for nice easy paced walks to enjoy the weather. As
-                for hobbies, I play StarCraft, which if you might not know is a
+                for hobbies, I play StarCraft, which if you might not know is a popular
                 strategy game made by Blizzard. Other than that, I watch animes
                 here and there, a favorite of mines is Samurai Champloo. I also
                 enjoy snowboarding and skateboarding even though I haven't done
                 either of those for a long time. And one thing I been meaning to
                 cross off my bucketlist is skydiving.
-              </p>
-              <p>
-                I decided to my a major in Computer Science after my first
-                quarter in Chabot Community College. I found that coding was
-                kind of fun and it seem to be a booming field so I jumped in.
-                However, I think it's not fun to code for the sake of coding, I
-                think the fun part is when I apply my creativity to build
-                something which is why I have random projects from GitHub.
-              </p>
-              <p>
+            
+           
                 Regardless I hope you enjoyed your stay on this site and feel free to contact
                 me if you need a software developer.
+             
               </p>
             </div>
           </div>

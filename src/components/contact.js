@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import {Card, CardTitle, CardMenu, CardText, Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 
 class Contact extends Component {
   constructor() {
@@ -20,10 +20,15 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div id = "theRing2" className="contact-body">
-        <Grid className="contact-grid" style= {{ textAlign: "center"}}>
-          <Cell phone={12} col={6}>
-            <h2>Tyler Hu</h2>
+      <div id = "theRing2" style={{width:"100%", height:"100%"}}>
+
+       
+       
+            <Card shadow={10} style= {{marginTop:"10%", marginLeft:"auto", marginRight:"auto", paddingBottom:"5%",  width: "80%", textAlign: "center"}} >
+
+            <Grid  style= {{ width: "100%"}}>
+          <Cell  phone={12} col={6} >
+            <h3 style= {{ fontFamily:"Oxygen"}}>Tyler Hu</h3>
             <img
                 src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" 
               alt="avatar"
@@ -34,33 +39,34 @@ class Contact extends Component {
             </p>
           </Cell>
 
-
-
-          <Cell phone={12} col={6}>  
-          <h2 style={{textAlign:"left"}}>Contact Me</h2>
-          <Cell col={8}>
-            <hr style={{textAlign:"left"}} />
+      
+          <Cell style= {{ marginTop:"2%"}}  phone={12} col={6}>  
+          <h3 style={{textAlign:"center", fontFamily: "Oxygen"}}>Contact Me</h3>
+          <Cell col={11}>
+            <hr style={{textAlign:"center"}} />
           </Cell>
             <div className="contact-list">
               <List>
                 <ListItem>
-                  <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  <ListItemContent style={{ fontSize: "18px" }}
                   >
                     <i  class="fas fa-phone-square-alt" aria-hidden="true" />
                       (510) 701-7525   
                   </ListItemContent>  
                 </ListItem>
                 <ListItem>
-                  <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  <ListItemContent style={{ fontSize: "18px" }}
                   >
+                   
                     <i class="fas fa-envelope-square" aria-hidden="true" />
                       tylerhu8@gmail.com 
+                     
                   
                   </ListItemContent>  
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  <ListItemContent style={{ fontSize: "18px" }}
                   >
                     <i class="fab fa-skype" aria-hidden="true" />
                       tylerhu3
@@ -68,9 +74,8 @@ class Contact extends Component {
                 </ListItem>
 
                 <ListItem>
-                  <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
+                  <ListItemContent style={{ fontSize: "18px" }}
                   >
-
                     <i class="fab fa-linkedin" aria-hidden="true" />
                     tylerhu89
                   </ListItemContent>  
@@ -79,7 +84,11 @@ class Contact extends Component {
             </List>
             </div>
           </Cell>
-        </Grid>
+
+
+          </Grid>
+            </Card>
+    
       </div>
     );
   }

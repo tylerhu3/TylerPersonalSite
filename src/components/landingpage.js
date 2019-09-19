@@ -10,8 +10,8 @@ class Landing extends Component {
       el: "#net",
       color: 0xffffff,
       backgroundColor: 0x3155ac,
-      points: 7.0,
-      maxDistance: 25.0
+      points: 6.0,
+      maxDistance: 18.0
     });
   }
   componentWillUnmount() {
@@ -22,15 +22,20 @@ class Landing extends Component {
       <div id="net" className="landingBG">
       <div  style={{ width: "100%", margin: "auto" }}>
         <Grid className="landing-grid">
-          <Cell style={{textAlign:"center"}} col={12}>
+          <Cell col={12}>
             <img
               src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png"
               alt="avatar"
               className="avatar-img"
             />
+                
             <div className="banner-text">
-              <h1> Software Developer</h1>
+            
+
+                <div style={{textAlign:"center"}}>  <h2 > Software Developer</h2>  </div>
+              
               <hr></hr>
+        
               <p>Android | Python | NodeJS | Express | MySQL | MongoDB | C++</p>
               <div className="social-links">
                 <a
@@ -56,9 +61,25 @@ class Landing extends Component {
                   <i class="fab fa-github-alt"></i>
                 </a>
 
+                <a
+                  href="https://www.freecodecamp.org/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fab fa-free-code-camp"></i>
+                </a>
+
+                <a
+                  href="http://Starbucks.com"
+                  alt="Coffee Addict"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i class="fas fa-coffee"></i>
+                </a>
               </div>
             </div>
-          </Cell>
+        </Cell>
         </Grid>
       </div>
       </div>
