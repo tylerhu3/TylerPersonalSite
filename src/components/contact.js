@@ -22,7 +22,7 @@ class Contact extends Component {
     return (
       <div id = "theRing2" className="contact-body">
         <Grid className="contact-grid" style= {{ textAlign: "center"}}>
-          <Cell col={6}>
+          <Cell phone={12} col={6}>
             <h2>Tyler Hu</h2>
             <img
                 src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png" 
@@ -33,15 +33,16 @@ class Contact extends Component {
               Recently graduated from University of California, Santa Cruz with a BS in Computer Science. 
             </p>
           </Cell>
-          <Cell col={6}>
-            
+
+
+
+          <Cell phone={12} col={6}>  
           <h2 style={{textAlign:"left"}}>Contact Me</h2>
           <Cell col={8}>
             <hr style={{textAlign:"left"}} />
           </Cell>
             <div className="contact-list">
               <List>
-
                 <ListItem>
                   <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
                   >
@@ -49,8 +50,6 @@ class Contact extends Component {
                       (510) 701-7525   
                   </ListItemContent>  
                 </ListItem>
-
-
                 <ListItem>
                   <ListItemContent style={{ fontSize: "30px", fontFamily: "Anton" }}
                   >

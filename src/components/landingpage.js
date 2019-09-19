@@ -22,7 +22,7 @@ class Landing extends Component {
       <div id="net" className="landingBG">
       <div  style={{ width: "100%", margin: "auto" }}>
         <Grid className="landing-grid">
-          <Cell col={12}>
+          <Cell style={{textAlign:"center"}} col={12}>
             <img
               src="https://cdn1.iconfinder.com/data/icons/people-49/512/_nerd_man-512.png"
               alt="avatar"
@@ -56,22 +56,6 @@ class Landing extends Component {
                   <i class="fab fa-github-alt"></i>
                 </a>
 
-                <a
-                  href="https://www.freecodecamp.org/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <i class="fab fa-free-code-camp"></i>
-                </a>
-
-                <a
-                  href="http://Starbucks.com"
-                  alt="Coffee Addict"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <i class="fas fa-coffee"></i>
-                </a>
               </div>
             </div>
           </Cell>

@@ -50,6 +50,9 @@ class Projects extends Component {
               style={{ paddingTop: "2%", fontFamily: "Oxygen" }}
               className="projects-grid"
             >
+                <Grid>
+            
+                <Cell phone={12} col={4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 {/* The below uses the pictures in local folder rather than url */}
                 {/* <img alt="test" style={{width: "100%", height:"90%", background: "center / cover"}} src={playerPic}></img> */}
@@ -97,7 +100,17 @@ class Projects extends Component {
                   <IconButton name="share" />
                 </CardMenu>
               </Card>
+                  </Cell>
 
+
+
+
+
+
+
+
+
+                  <Cell phone={12} col={4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 <CardTitle
                   style={{
@@ -144,6 +157,21 @@ class Projects extends Component {
                 </CardMenu>
               </Card>
 
+</Cell>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <Cell phone={12} col={4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 <CardTitle
                   style={{
@@ -188,16 +216,21 @@ class Projects extends Component {
                   <IconButton name="share" />
                 </CardMenu>
               </Card>
+                  </Cell>
+              </Grid>
             </div>
 
+
+
+            <Cell col={12} phone={4}>
             <div
               className="mdl-shadow--4dp  mdl-color--white "
-              style={{marginLeft:"50px", marginTop: "350px", width:"90%"}}
+              style={{marginLeft:"5%", marginTop: "275px", width:"90%"}}
             >
               <div style={{padding : "20px"}}>
-                <h3 style={{ paddingTop:"20px",  textAlign: "left" }}>
-                  Installation Notes:
-                </h3>
+                <h5 style={{ paddingTop:"20px",  textAlign: "left" }}>
+                <i style={{color: "purple"}} class="fas fa-exclamation-circle"></i> Installation Notes
+                </h5>
                 <p>
                   If you are planning to installing the APK files, you will need "EZ File Explorer" from the Play store,
                   once you have it,  all you have to do is get these files on to your phone and open the files with EZ file
@@ -215,6 +248,13 @@ class Projects extends Component {
                 
               </div>
             </div>
+            
+            </Cell>
+
+
+
+
+
           </div>
         );
       case 1:
