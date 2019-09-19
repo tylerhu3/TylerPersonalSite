@@ -10,7 +10,7 @@ class About extends Component {
 
           <div
             className="mdl-shadow--4dp  mdl-color--white "
-            style={{ marginTop:"10px"}}
+            style={{ marginTop:"5%"}}
           >
             <div style={{ textAlign: "center", margin: "10px"}}>
               <img
