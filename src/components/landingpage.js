@@ -20,7 +20,7 @@ class Landing extends Component {
   componentDidMount() {
     this.effect = window.VANTA.NET({
       el: "#net",
-      color: 0xffffff,
+      color: 0x00FFFF,
       backgroundColor: 0x3155ac,
       points: 6.0,
       maxDistance: 18.0
@@ -110,11 +110,11 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div id="net" className="landingBG">
-        <div style={{ width: "100%", margin: "auto" }}>
-          <Grid className="landing-grid">
-            <Cell col={12}></Cell>
-            <Cell className="zeroMargin" phone={12} col={12}>
+      <div  id="net" className="landingBG">
+        <div style={{ width: "100%", margin: "auto" }} >
+          <Grid className="landing-grid" >
+         
+            <Cell style={{marginTop:"5%", paddingTop:"0"}} phone={12} col={12}>
               <div className="banner-text">
                 <div style={{ textAlign: "center" }}>
                   <img
@@ -127,12 +127,13 @@ class Landing extends Component {
                   <p className="banner-text-p">
                     who enjoys building Android and web apps.
                   </p>
+                  <Cell style={{marginTop:"2.5%"}} col={12} phone={3}>
+              {this.renderIcons()}
+            </Cell>
                 </div>
               </div>
             </Cell>
-            <Cell col={12} phone={3}>
-              {this.renderIcons()}
-            </Cell>
+            
           </Grid>
         </div>
       </div>
