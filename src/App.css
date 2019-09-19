@@ -171,15 +171,16 @@ font-size: 35px;
 
 .social-links-mobile {
   display: flex;
-  margin:auto;
   padding:0;
+  margin-top: 15%;
   justify-content: space-between;
   width: 100%;
 }
+
 .social-links-mobile i {
   color: white;
-  font-size: 5em;
-  padding: 8px;
+  font-size: 3em;
+  padding: 2px;
 }
 
 .social-links i {
