@@ -27,7 +27,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div id="theRing2" style={{ width: "100%", height: "100%" }}>
+      <div id="theRing" style={{ width: "100%", height: "100%" }}>
         <Card
           shadow={10}
           style={{
