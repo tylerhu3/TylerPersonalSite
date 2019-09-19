@@ -43,10 +43,10 @@ class App extends Component {
                 }}
                 to="/"
               >
-                {" "}
+  
                 <div style={{ fontFamily: "Oxygen", fontSize: "23px" }}>
                   Main
-                </div>{" "}
+                </div>
               </Link>
             }
           >

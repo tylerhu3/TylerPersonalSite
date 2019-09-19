@@ -138,9 +138,11 @@ font-size: 35px;
 
 
 .banner-text h2 {
-  font-size: 66px;
+  font-size: 46px;
   font-weight: bold;
   color: white;
+  margin-bottom: 0%;
+  margin-top: 0%;
 }
 
 .banner-text hr {
@@ -149,17 +151,35 @@ font-size: 35px;
   margin: auto;
 }
 
-.banner-text p {
+.banner-text-p {
+  align-content: center;
+  opacity: 0.8;
+  width: 100%;
+  margin: auto;
   color: white;
+  padding:0;
   font-size: 20px;
-  padding: 1em;
 }
 
 .social-links {
   display: flex;
+  margin:auto;
+  padding:0;
   justify-content: space-between;
-  width: 50%;
-  margin: auto;
+  width: 35%;
+}
+
+.social-links-mobile {
+  display: flex;
+  margin:auto;
+  padding:0;
+  justify-content: space-between;
+  width: 100%;
+}
+.social-links-mobile i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
 }
 
 .social-links i {
