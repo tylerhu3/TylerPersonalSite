@@ -110,7 +110,7 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div id="net2" className="landingBG">
+      <div id="net" className="landingBG">
         <div style={{ width: "100%", margin: "auto" }}>
           <Grid className="landing-grid">
             <Cell col={12}></Cell>
