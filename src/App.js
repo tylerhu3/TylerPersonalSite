@@ -39,7 +39,7 @@ class App extends Component {
                 style={{
                   borderBottom: "5px dotted black",
                   textDecoration: "none",
-                  color: "black"
+                  color: "white"
                 }}
                 to="/"
               >
@@ -54,18 +54,18 @@ class App extends Component {
               <Link
                 id="test"
                 to="/aboutme"
-                style={{ color: "black", fontSize: "23px" }}
+                style={{ color: "white", fontSize: "23px" }}
               >
                 About Me
               </Link>
-              <Link to="/resume" style={{ color: "black", fontSize: "23px" }}>
+              <Link to="/resume" style={{ color: "white", fontSize: "23px" }}>
                 Resume
               </Link>
-              <Link to="/projects" style={{ color: "black", fontSize: "23px" }}>
+              <Link to="/projects" style={{ color: "white", fontSize: "23px" }}>
                 {" "}
                 Projects
               </Link>
-              <Link to="/contact" style={{ color: "black", fontSize: "23px" }}>
+              <Link to="/contact" style={{ color: "white", fontSize: "23px" }}>
                 Contact
               </Link>
             </Navigation>
