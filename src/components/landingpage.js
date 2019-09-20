@@ -84,14 +84,22 @@ class Landing extends Component {
             <i class="fab fa-github-alt"></i>
           </a>
 
+        
+
           <a
-            href="http://Starbucks.com"
-            alt="Coffee Addict"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i class="fas fa-coffee"></i>
+          href="https://www.dropbox.com/s/xjpw0ljk33d4u0b/20190919%20Resume.docx?dl=0"
+          alt="Resume"
+          title="My Resume"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          
+          <i class="fas fa-paperclip"></i>
           </a>
+
+
+
+
         </div>
       );
 
