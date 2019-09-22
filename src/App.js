@@ -22,13 +22,16 @@ class App extends Component {
             }
             scroll
           >
-            <Navigation>
-              <Link to="/resume" >
+            <Navigation >
+           
+          
+              <Link  style={{ fontSize:"25px"}} to="/resume" >
                 Resume
               </Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/aboutme">About Me</Link>
+              <Link  style={{ fontSize:"25px"}} to="/projects">Projects</Link>
+              <Link   style={{ fontSize:"25px"}} to="/contact">Contact</Link>
+              <Link  style={{ fontSize:"25px"}} to="/aboutme">About Me</Link>
+         
             </Navigation>
           </Header>
 
