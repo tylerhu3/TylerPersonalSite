@@ -93,8 +93,8 @@ class Resume extends Component {
             />
 
             <Experience
-              startYear="Aug 2016"
-              endYear="May 2017"
+              startYear="Jun 2015"
+              endYear="Mar 2016"
               jobName="Vaccine Customer Service and Rig Manager"
               company="Vetco, Newark, CA"
               jobDescription="Perform administration paperwork for pet vaccinations, educated customers on proper yearly pet vaccinations helping reduce overall common pet deaths.
@@ -103,8 +103,8 @@ class Resume extends Component {
             />
 
             <Experience
-              startYear="Aug 2016"
-              endYear="May 2017"
+              startYear="Oct 2007"
+              endYear="Jul 2014"
               jobName="Aerospace Equipment Mechanic"
               company="United States Air Force, Misawa, Japan"
               jobDescription="
