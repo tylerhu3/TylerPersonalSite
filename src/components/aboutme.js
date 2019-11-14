@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import avatarPic from "../assets/ProfileHead.png";
 class About extends Component {
   constructor() {
     super();
@@ -26,8 +27,8 @@ class About extends Component {
         >
           <div style={{ textAlign: "center", margin: "10px" }}>
             <img
-              src="https://lh3.googleusercontent.com/pf3dPcWyfAkl20Ftzq0Fqr_SI069iPxafl0zq8LNnOxDxZxiOXSBsEpbodIltEIGLavSXT82BzHwokn1T7SL3BxUXMFJJZ0qNJ8gJOYti-K9VCDSL0a8op2I8QgC62V42JTr1YIXseZL5IYNfkL64EM0FxNbYSbmzVlBpoU99iiLobenVpYO1UfB-TY2-giOz3-El40FJKjcCQiWz4HkLB4viC3sv6Wd9eEXFRyPbDGu2G6p2yosFZBtuN1Kl6JHREl0sKpXxUmROxM4XuwGuhJGGJLkfaXVUraue3tKe04BDbwKnWKv0cA4V9GplcErfCkytKZs_ITQ9scWBj5zQbFEIvKThsh-JsmUYM18__4eZ7zm7CTBCgNirCHLFvPAGK_goT8FZjyfnGpXpaq2wNjOrDxanyu3skJhLfRnK9xRijQllV87vkaujA7pHO72Nggr_MuFhiuFrmaSswpmDiQr1FZAtb8YYHnaI42-s0Hr2NI8kuizzM8DRPmHzn7qVNj7Qb_bHVoQLz2Fh3cs3Q1GByQBlip8LAL1sUxB3w13wrDRuQxT3bpsJytfO9PPzGBHYuthVFhc8AQWv-w1iuj12czYZ_M2n4nEsQ8HMHCAI2ErW9RssQLsIV__5aQqxHjJxZ2x5Kpw-aw53rJ6ax1eempZudkEFWul1UpJMV4gLBLaB8e_-Ahh=s387-no"
-              alt="avatar"
+              src={avatarPic} 
+               alt="avatar"
               style={{ marginTop: "20px ", height: "200px" }}
             />
           </div>

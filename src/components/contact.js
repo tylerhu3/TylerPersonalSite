@@ -8,6 +8,9 @@ import {
   ListItemContent
 } from "react-mdl";
 
+
+import avatarPic from "../assets/ProfileHead.png";
+
 class Contact extends Component {
   constructor() {
     super();
@@ -56,7 +59,7 @@ class Contact extends Component {
             <Cell phone={12} col={6}>
               <h3 style={{ fontFamily: "Oxygen" }}>Tyler Hu</h3>
               <img
-                src="https://lh3.googleusercontent.com/eSuK8UiP5z-gZdMQgVrEGtFVZgA77WHMt460mfTpWIy444Fa8XGcxzxqTDK9bGWFsAelNNYauLSqgIS7HLj3x7iewUap1K5qyLJtmzd9cjnyY-4T61N8iOZkWU7IxrJM9m3rEDg8jRD5KhoYhSBqPau_asqQACjTITGA33v-MArP6nYcKiwcVE5Wi7XQPls3HiSw4TsnGmlniprvTqczBiJ5GtSWvUHpRHqDgEd83ZytBbVmneZw22H0mnI7eVhLd6_k5nshhejbEzVizx1Vb5eHbV0P5BUrYe_X65kUuNer-QUZC8hv-YCgSeX16sADZfty2K8u6GPJuxO4wmWWX2mD0K5CG7t0XIZp8zrqPqWqC_7I6b03RldSqXUTmGBwu8-P7V74lp46xkfjz0dpQzfSoHYtU_vziZSDfBarKQtfd2ggsk4fP9ZJ6CrVvtE-q1x5g9gvAvIGxyFASqps_SoTmdpC0WadJSGx4s42TayTGIiihcAesWYC9ZlX14O7r-wf4A5K3CNAKwHJtSYMv5ZVViJ3P1k2BY9oKXNu5_9sce0psunuyGVhyMT2Ges63tTmeyVNCbXlPxgIzpuJsQpT74xhN32sotNOYvdR0RgnpWnA_Vpp7X5wznryC1oANhE28SioSxqwfiBzbInoCOclZEdMxQt7L9TLLSsJ9uVKiB7OqZgJeMc=s289-no"
+                src={avatarPic}
                 alt="avatar"
                 style={{ height: "250px" }}
               />
