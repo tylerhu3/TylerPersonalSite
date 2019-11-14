@@ -57,7 +57,7 @@ background-position: center center;              /* optional, center the image *
 }
 
 .projects-grid {
-  display: flex;
+  /* display: flex; */
   font-family: "Oxygen";
   padding-top: "2%";
 }
