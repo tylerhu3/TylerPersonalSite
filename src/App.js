@@ -15,7 +15,7 @@ class App extends Component {
             style={{ backgroundColor: "#3155ac" }}
             title={
               <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                <div style={{ fontFamily: "Oxygen", fontSize: "23px" }}>
+                <div style={{ fontFamily: "Oxygen", fontSize: "20px" }}>
                   Main
                 </div>
               </Link>
@@ -25,12 +25,17 @@ class App extends Component {
             <Navigation >
            
           
-              <Link  style={{ fontSize:"25px"}} to="/resume" >
-                Resume
+              <Link  style={{ fontSize:"20px"}} to="/resume" >
+              <i class="fas fa-paper-plane"></i> Resume 
               </Link>
-              <Link  style={{ fontSize:"25px"}} to="/projects">Projects</Link>
-              <Link   style={{ fontSize:"25px"}} to="/contact">Contact</Link>
-              <Link  style={{ fontSize:"25px"}} to="/aboutme">About Me</Link>
+              <Link  style={{ fontSize:"20px"}} to="/projects">
+              <i class="fas fa-project-diagram"></i> Projects
+              </Link>
+              <Link   style={{ fontSize:"20px"}} to="/contact">
+              <i class="fas fa-phone-alt"></i> Contact
+              </Link>
+              <Link  style={{ fontSize:"20px"}} to="/aboutme">
+              <i class="fas fa-address-card"></i> About Me</Link>
          
             </Navigation>
           </Header>

@@ -45,8 +45,9 @@ class Landing extends Component {
         el: "#net",
         color: 0x00ffff,
         backgroundColor: 0x3155ac,
-        points: 6.0,
-        maxDistance: 18.0
+        points: 8.0,
+  maxDistance: 21.00,
+  spacing: 18.00
       });
     } else {
       this.effect = window.VANTA.WAVES({
