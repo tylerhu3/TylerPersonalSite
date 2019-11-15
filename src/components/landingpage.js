@@ -92,7 +92,7 @@ class Landing extends Component {
         
 
           <a
-          href="https://www.dropbox.com/s/xjpw0ljk33d4u0b/20190919%20Resume.docx?dl=0"
+          href="https://www.dropbox.com/s/i0e7g2fk00bqdcs/Tyler_Hu_Resume3.docx?dl=0"
           alt="Resume"
           title="My Resume"
           rel="noopener noreferrer"
