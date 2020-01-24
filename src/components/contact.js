@@ -29,16 +29,18 @@ class Contact extends Component {
   };
 
   componentDidMount() {
-    this.effect = window.VANTA.RINGS({
-      el: "#theRing",
-      backgroundColor: 0xffffff,
-      color1: 0x95cb9,
-      color2: 0x4a00ff,
-      colorMode: "lerp"
-    });
+    //if we want effects for this page in the future, simply uncomment the below
+    //and the part on componentWillUnmount
+    // this.effect = window.VANTA.RINGS({
+    //   el: "#theRing",
+    //   backgroundColor: 0xffffff,
+    //   color1: 0x95cb9,
+    //   color2: 0x4a00ff,
+    //   colorMode: "lerp"
+    // });
   }
   componentWillUnmount() {
-    if (this.effect) this.effect.destroy();
+    // if (this.effect) this.effect.destroy();
   }
 
   contactAbstracted(){

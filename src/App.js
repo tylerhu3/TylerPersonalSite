@@ -4,12 +4,12 @@ import { Layout, Header, Drawer, Navigation, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 class App extends Component {
-  
+
 
 
   render() {
     return (
-      <div style={{ fontFamily: "Oxygen", width: "100%", height: "100%"}}>
+      <div style={{ fontFamily: "Oxygen", width: "100%", height: "100%" }}>
         <Layout>
           <Header
             style={{ backgroundColor: "#3155ac" }}
@@ -23,25 +23,25 @@ class App extends Component {
             scroll
           >
             <Navigation >
-           
-          
-              <Link  style={{ fontSize:"20px"}} to="/resume" >
-              <i class="fas fa-paper-plane"></i> Resume 
+
+
+              <Link style={{ fontSize: "20px" }} to="/resume" >
+                <i class="fas fa-paper-plane"></i> Resume
               </Link>
-              <Link  style={{ fontSize:"20px"}} to="/projects">
-              <i class="fas fa-project-diagram"></i> Projects
+              <Link style={{ fontSize: "20px" }} to="/projects">
+                <i class="fas fa-project-diagram"></i> Projects
               </Link>
-              <Link   style={{ fontSize:"20px"}} to="/contact">
-              <i class="fas fa-phone-alt"></i> Contact
+              <Link style={{ fontSize: "20px" }} to="/contact">
+                <i class="fas fa-phone-alt"></i> Contact
               </Link>
-              <Link  style={{ fontSize:"20px"}} to="/aboutme">
-              <i class="fas fa-address-card"></i> About Me</Link>
-         
+              <Link style={{ fontSize: "20px" }} to="/aboutme">
+                <i class="fas fa-address-card"></i> About Me</Link>
+
             </Navigation>
           </Header>
 
           <Drawer
-            style={{  backgroundColor: "#3155ac" }}
+            style={{ backgroundColor: "#3155ac" }}
             title={
               <Link
                 style={{
@@ -51,7 +51,7 @@ class App extends Component {
                 }}
                 to="/"
               >
-  
+
                 <div style={{ fontFamily: "Oxygen", fontSize: "23px" }}>
                   Main
                 </div>
