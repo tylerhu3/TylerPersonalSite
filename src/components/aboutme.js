@@ -80,10 +80,8 @@ About Me:            </h3>
               enlistment was expired. On my off days, I typically like to enjoy
               a cup of coffee with a friend or go for nice easy paced walks to
               enjoy the weather. As for hobbies, I play StarCraft, which if you
-              might not know is a popular strategy game made by Blizzard. I also enjoy snowboarding and skateboarding even
-              though I haven't done either of those for a long time. And one
-              thing I been meaning to cross off my bucketlist is skydiving.
-              Regardless I hope you enjoyed your stay on this site and feel free
+              might not know is a popular strategy game made by Blizzard. 
+              I hope you enjoyed your stay on this site and feel free
               to contact me if you need a software developer.
             </p>
           </div>
