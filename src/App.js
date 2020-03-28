@@ -26,16 +26,16 @@ class App extends Component {
 
 
               <Link style={{ fontSize: "20px" }} to="/resume" >
-                <i class="fas fa-paper-plane"></i> Resume
+                <i className="fas fa-paper-plane"></i> Resume
               </Link>
               <Link style={{ fontSize: "20px" }} to="/projects">
-                <i class="fas fa-project-diagram"></i> Projects
+                <i className="fas fa-project-diagram"></i> Projects
               </Link>
               <Link style={{ fontSize: "20px" }} to="/contact">
-                <i class="fas fa-phone-alt"></i> Contact
+                <i className="fas fa-phone-alt"></i> Contact
               </Link>
               <Link style={{ fontSize: "20px" }} to="/aboutme">
-                <i class="fas fa-address-card"></i> About Me</Link>
+                <i className="fas fa-address-card"></i> About Me</Link>
 
             </Navigation>
           </Header>

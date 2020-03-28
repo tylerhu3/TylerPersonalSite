@@ -1,21 +1,14 @@
 import React, { Component } from "react";
-import {
-  Card,
-  Grid,
-  Cell,
-  List,
-  ListItem,
-  ListItemContent
-} from "react-mdl";
-
-
+import { Card, Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import Confetti from "react-confetti";
 import avatarPic from "../assets/ProfileHead.png";
 
 class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      width: window.innerWidth
+      width: window.innerWidth,
+      height: window.innerHeight
     };
     this.myRef = React.createRef();
   }
@@ -25,10 +18,11 @@ class Contact extends Component {
   }
 
   handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   };
 
   componentDidMount() {
+    // const { widthForConfetti, heightForConfetti } = useWindowSize()
     //if we want effects for this page in the future, simply uncomment the below
     //and the part on componentWillUnmount
     // this.effect = window.VANTA.RINGS({
@@ -43,10 +37,30 @@ class Contact extends Component {
     // if (this.effect) this.effect.destroy();
   }
 
-  contactAbstracted(){
+  render() {
+    const { width, height } = this.state;
+    const isMobile = width <= 700;
+    if (isMobile) {
+      return (
+        <div style={{ width: "100%", height: "100%", marginTop: "18%" }}>
+          {this.contactAbstracted()}
+        </div>
+      );
+    }
+
+    return (<div style={{ zIndex:'22', width: "100%", height: "100%",}} >
+      <Confetti style={{zIndex:'-22'}} width={width} height={height}>
+      </Confetti>
+        {this.contactAbstracted()}
+      </div>
+    );
+  }
+
+
+  contactAbstracted() {
     return (
       <div>
-         <Card
+        <Card
           shadow={10}
           style={{
             marginTop: "5%",
@@ -60,11 +74,7 @@ class Contact extends Component {
           <Grid style={{ width: "100%" }}>
             <Cell phone={12} col={6}>
               <h3 style={{ fontFamily: "Oxygen" }}>Tyler Hu</h3>
-              <img
-                src={avatarPic}
-                alt="avatar"
-                style={{ height: "250px" }}
-              />
+              <img src={avatarPic} alt="avatar" style={{ height: "250px" }} />
               <p style={{ width: "74%", margin: "auto", paddingTop: "1em" }}>
                 Recently graduated from University of California, Santa Cruz
                 with a BS in Computer Science.
@@ -82,27 +92,27 @@ class Contact extends Component {
                 <List>
                   <ListItem>
                     <ListItemContent style={{ fontSize: "18px" }}>
-                      <i class="fas fa-phone-square-alt" aria-hidden="true" />
+                      <i className="fas fa-phone-square-alt" aria-hidden="true" />
                       (510) 701-7525
                     </ListItemContent>
                   </ListItem>
                   <ListItem>
                     <ListItemContent style={{ fontSize: "18px" }}>
-                      <i class="fas fa-envelope-square" aria-hidden="true" />
+                      <i className="fas fa-envelope-square" aria-hidden="true" />
                       tylerhu8@gmail.com
                     </ListItemContent>
                   </ListItem>
 
                   <ListItem>
                     <ListItemContent style={{ fontSize: "18px" }}>
-                      <i class="fab fa-skype" aria-hidden="true" />
+                      <i className="fab fa-skype" aria-hidden="true" />
                       tylerhu3
                     </ListItemContent>
                   </ListItem>
 
                   <ListItem>
                     <ListItemContent style={{ fontSize: "18px" }}>
-                      <i class="fab fa-linkedin" aria-hidden="true" />
+                      <i className="fab fa-linkedin" aria-hidden="true" />
                       tylerhu89
                     </ListItemContent>
                   </ListItem>
@@ -111,25 +121,8 @@ class Contact extends Component {
             </Cell>
           </Grid>
         </Card>
-        </div>
-    )
-  }
-  render() {
-
-    const { width } = this.state;
-    const isMobile = width <= 700;
-    if(isMobile){
-    return (
-      <div  style={{ width: "100%", height: "100%", marginTop: "18%"}}>
-      {this.contactAbstracted()}
       </div>
     );
-  }
-  return (
-    <div style={{ width: "100%", height: "100%"}}>
-      {this.contactAbstracted()}
-      </div>
-  )
   }
 }
 export default Contact;

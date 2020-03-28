@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import avatarPic from "../assets/ProfileHead.png";
 class About extends Component {
   constructor() {
@@ -34,8 +33,7 @@ class About extends Component {
           </div>
           <div className="innerAboutMe" style={{ margin: "10px" }}>
             <h3 style={{ margin: "10px", textAlign: "center" }}>
-              Interesting things about me...
-            </h3>
+About Me:            </h3>
             <br></br>
             <p>
               Before I got my Computer Science Degree from UC Santa Cruz, I
@@ -104,7 +102,7 @@ class About extends Component {
 
     </div>);
   
-    return (<div className="about1stDiv"  >
+    return (<div style={{background:"#4286f4"}}  >
       {this.aboutMeAbstractedMobile()}
 
     </div>);

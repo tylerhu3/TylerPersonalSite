@@ -21,7 +21,6 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import NET from "vanta/dist/vanta.net.min";
 import WAVES from "vanta/dist/vanta.waves.min";
-
 import avatarPic from "../assets/ProfileHead.png";
 
 class Landing extends Component {
