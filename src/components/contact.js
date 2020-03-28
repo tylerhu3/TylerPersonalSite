@@ -20,7 +20,7 @@ class Contact extends Component {
     this.myRef = React.createRef();
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
   }
 

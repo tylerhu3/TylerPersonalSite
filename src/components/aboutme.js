@@ -9,7 +9,7 @@ class About extends Component {
     };
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
   }
 

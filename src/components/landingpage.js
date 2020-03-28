@@ -19,45 +19,42 @@ size.
 
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
+import NET from "vanta/dist/vanta.net.min";
+import WAVES from "vanta/dist/vanta.waves.min";
 
 import avatarPic from "../assets/ProfileHead.png";
 
 class Landing extends Component {
   constructor() {
     super();
-    this.siteVariable = "https://drive.google.com/file/d/1qPMgwq3ZCCj5W9h49eM1O7AHPpW51-jr/view"
-    this.myRef = React.createRef();
+    this.vantaRef = React.createRef(); //for animated background
     this.state = {
       width: window.innerWidth
     };
   }
 
-  componentWillMount() {
-    window.addEventListener("resize", this.handleWindowSizeChange);
-  }
-
-  handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
-  };
-
   componentDidMount() {
+    window.addEventListener("resize", this.handleWindowSizeChange);
     const { width } = this.state;
     const isMobile = width <= 700;
     if (!isMobile) {
-      this.effect = window.VANTA.NET({
-        el: "#net",
+      this.vantaEffect = NET({
+        el: this.vantaRef.current,
         color: 0x00ffff,
         backgroundColor: 0x3155ac,
         points: 8.0,
-  maxDistance: 21.00,
-  spacing: 18.00
+        maxDistance: 21.0,
+        spacing: 18.0
       });
     } else {
-      this.effect = window.VANTA.WAVES({
-        el: "#net"
-      });      
+      this.vantaEffect = WAVES({
+        el: this.vantaRef.current,
+      });
     }
   }
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
 
   renderIcons() {
     const { width } = this.state;
@@ -80,7 +77,6 @@ class Landing extends Component {
           >
             <i class="fab fa-linkedin"></i>
           </a>
-
           <a
             href="https://github.com/tylerhu3"
             rel="noopener noreferrer"
@@ -88,23 +84,15 @@ class Landing extends Component {
           >
             <i class="fab fa-github-alt"></i>
           </a>
-
-        
-
           <a
-          href="https://www.dropbox.com/s/i0e7g2fk00bqdcs/Tyler_Hu_Resume3.docx?dl=0"
-          alt="Resume"
-          title="My Resume"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          
-          <i class="fas fa-paperclip"></i>
+            href="https://www.dropbox.com/s/i0e7g2fk00bqdcs/Tyler_Hu_Resume3.docx?dl=0"
+            alt="Resume"
+            title="My Resume"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i class="fas fa-paperclip"></i>
           </a>
-
-
-
-
         </div>
       );
 
@@ -112,7 +100,7 @@ class Landing extends Component {
       <div className="social-links" style={{ marginTop: "2.5%" }}>
         {console.log("Desktop View")}
         <a
-        title="Diploma"
+          title="Diploma"
           href="https://www.dropbox.com/s/3i262b2tke5h9lp/bsDegree.jpg?dl=0"
           rel="noopener noreferrer"
           target="_blank"
@@ -120,7 +108,7 @@ class Landing extends Component {
           <i className="fas fa-graduation-cap" aria-hidden="true" />
         </a>
         <a
-        title="LinkedIn"
+          title="LinkedIn"
           href="https://www.linkedin.com/in/tylerhu89/"
           rel="noopener noreferrer"
           target="_blank"
@@ -129,7 +117,7 @@ class Landing extends Component {
         </a>
 
         <a
-        title="GitHub"
+          title="GitHub"
           href="https://github.com/tylerhu3"
           rel="noopener noreferrer"
           target="_blank"
@@ -144,7 +132,6 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
         >
-          
           <i class="fas fa-paperclip"></i>
         </a>
       </div>
@@ -152,8 +139,8 @@ class Landing extends Component {
   }
 
   componentWillUnmount() {
+    if (this.vantaEffect) this.vantaEffect.destroy();
     window.removeEventListener("resize", this.handleWindowSizeChange);
-    if (this.effect) this.effect.destroy();
   }
   landingPageAbstracted() {
     return (
@@ -166,11 +153,7 @@ class Landing extends Component {
           >
             <div className="banner-text">
               <div style={{ textAlign: "center" }}>
-                <img
-                  src={avatarPic}
-                    alt="avatar"
-                  className="avatar-img"
-                />
+                <img src={avatarPic} alt="avatar" className="avatar-img" />
                 <p className="banner-text-p">Hello, I'm Tyler, a</p>
                 <h2>SOFTWARE DEVELOPER</h2>
                 <p className="banner-text-p">
@@ -187,7 +170,7 @@ class Landing extends Component {
 
   render() {
     return (
-      <div id="net" className="landingBG">
+      <div ref={this.vantaRef} className="landingBG">
         {this.landingPageAbstracted()}
       </div>
     );
