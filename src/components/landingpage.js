@@ -47,7 +47,7 @@ class Landing extends Component {
       });
     } else {
       this.vantaEffect = WAVES({
-        el: this.vantaRef.current,
+        el: this.vantaRef.current
       });
     }
   }
@@ -62,80 +62,80 @@ class Landing extends Component {
       return (
         <div className="social-links-mobile" style={{ marginTop: "1.5%" }}>
           {console.log("Mobile View")}
-          <a
-            href="https://www.dropbox.com/s/3i262b2tke5h9lp/bsDegree.jpg?dl=0"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fas fa-graduation-cap" aria-hidden="true" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/tylerhu89/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/tylerhu3"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i class="fab fa-github-alt"></i>
-          </a>
-          <a
-            href="https://www.dropbox.com/s/i0e7g2fk00bqdcs/Tyler_Hu_Resume3.docx?dl=0"
-            alt="Resume"
-            title="My Resume"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i class="fas fa-paperclip"></i>
-          </a>
+          {this.iconsAbstracted()}
         </div>
       );
 
     return (
       <div className="social-links" style={{ marginTop: "2.5%" }}>
         {console.log("Desktop View")}
+
+        {this.iconsAbstracted()}
+      </div>
+    );
+  }
+
+  iconsAbstracted = () => {
+    return (
+      <>
         <a
-          title="Diploma"
           href="https://www.dropbox.com/s/3i262b2tke5h9lp/bsDegree.jpg?dl=0"
           rel="noopener noreferrer"
           target="_blank"
+          onMouseOver={event => {
+            event.target.style.color = "cyan";
+          }}
+          onMouseOut={event => {
+            event.target.style.color = "#FFFFFF";
+          }}
         >
           <i className="fas fa-graduation-cap" aria-hidden="true" />
         </a>
+
         <a
-          title="LinkedIn"
           href="https://www.linkedin.com/in/tylerhu89/"
           rel="noopener noreferrer"
           target="_blank"
+          onMouseOver={event => {
+            event.target.style.color = "cyan";
+          }}
+          onMouseOut={event => {
+            event.target.style.color = "#FFFFFF";
+          }}
         >
           <i class="fab fa-linkedin"></i>
         </a>
-
         <a
-          title="GitHub"
           href="https://github.com/tylerhu3"
           rel="noopener noreferrer"
           target="_blank"
+          onMouseOver={event => {
+            event.target.style.color = "cyan";
+          }}
+          onMouseOut={event => {
+            event.target.style.color = "#FFFFFF";
+          }}
         >
           <i class="fab fa-github-alt"></i>
         </a>
-
         <a
-          href="https://www.dropbox.com/s/xjpw0ljk33d4u0b/20190919%20Resume.docx?dl=0"
+          href="https://www.dropbox.com/s/nwpdimybd9mned6/Tyler_Hu_Resume.pdf?dl=0"
           alt="Resume"
           title="My Resume"
           rel="noopener noreferrer"
           target="_blank"
+          onMouseOver={event => {
+            event.target.style.color = "cyan";
+          }}
+          onMouseOut={event => {
+            event.target.style.color = "#FFFFFF";
+          }}
         >
           <i class="fas fa-paperclip"></i>
         </a>
-      </div>
+      </>
     );
-  }
+  };
 
   componentWillUnmount() {
     if (this.vantaEffect) this.vantaEffect.destroy();

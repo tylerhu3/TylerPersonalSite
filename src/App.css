@@ -11,43 +11,49 @@ of tag elements (note the space between tag and .class):
 
  */
 
-.drawerColor{
-background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.drawerColor {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4286f4,
+    #373b44
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.innerAboutMe{
+.innerAboutMe {
   padding: 10px;
 }
 
-.about1stDiv{
-width: 100%;
-height: 100%;
-background-image: url("https://images.unsplash.com/photo-1524687752851-f6ecdfa92e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80");
-background-size:     cover;                      /* <------ */
-background-repeat: repeat-y;
-background-position: center center;              /* optional, center the image */
+.about1stDiv {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1524687752851-f6ecdfa92e4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80");
+  background-size: cover; /* <------ */
+  background-repeat: repeat-y;
+  background-position: center center; /* optional, center the image */
 }
 
-.about2ndDiv{
-  padding:10px;
+.about2ndDiv {
+  padding: 10px;
   width: 70%;
   margin: 0 auto;
 }
 
-.landingBG{
-  background: #3155ac; 
+.landingBG {
+  background: #3155ac;
   width: 100%;
   height: 100%;
 }
 
 .landing-grid {
-  
-    /* background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
-    background: linear-gradient(to right, #4286f4, #373B44);  */ 
-    
+  /* background: -webkit-linear-gradient(to right, #4286f4, #373B44);  
+    background: linear-gradient(to right, #4286f4, #373B44);  */
+
   text-align: center;
   position: fixed;
   top: 0;
@@ -78,9 +84,8 @@ background-position: center center;              /* optional, center the image *
 }
 
 .contact-grid {
-    
   border-radius: 25px;
-  box-sizing: content-box;  
+  box-sizing: content-box;
   border: 2px solid #000000;
   text-align: center;
   justify-content: center;
@@ -91,9 +96,8 @@ background-position: center center;              /* optional, center the image *
   margin-bottom: 10px;
 }
 
-
-.textSize{
-font-size: 35px;
+.textSize {
+  font-size: 35px;
 }
 .contact-grid p {
   font-family: "Oxygen", sans-serif;
@@ -115,7 +119,6 @@ font-size: 35px;
 }
 .contact-grid hr {
   border-top: 5px dotted black;
- 
 }
 
 .contact-list i {
@@ -136,8 +139,7 @@ font-size: 35px;
   border-radius: 10px;
 }
 
-
-.navvv Link{
+.navvv link {
   font-size: 30px;
 }
 
@@ -161,22 +163,22 @@ font-size: 35px;
   width: 100%;
   margin: auto;
   color: white;
-  padding:0;
+  padding: 0;
   font-size: 20px;
 }
 
 .social-links {
   align-self: center;
   display: flex;
-  margin:auto;
-  padding:0;
+  margin: auto;
+  padding: 0;
   justify-content: space-between;
   width: 50%;
 }
 
 .social-links-mobile {
   display: flex;
-  padding:0;
+  padding: 0;
   margin-top: 15%;
   justify-content: space-between;
   width: 100%;
@@ -214,5 +216,5 @@ font-size: 35px;
   background: #0c0000;
   height: 100%;
   border-radius: inherit;
-  transition: width .2s ease-in;
+  transition: width 0.2s ease-in;
 }

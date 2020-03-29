@@ -4,17 +4,19 @@ import { Layout, Header, Drawer, Navigation, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 class App extends Component {
-
-
-
   render() {
+    const rollOverTextColor = "cyan";
+    const normalTextColor = "white";
     return (
       <div style={{ fontFamily: "Oxygen", width: "100%", height: "100%" }}>
         <Layout>
           <Header
             style={{ backgroundColor: "#3155ac" }}
             title={
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <Link
+                style={{ textDecoration: "none", color: normalTextColor }}
+                to="/"
+              >
                 <div style={{ fontFamily: "Oxygen", fontSize: "20px" }}>
                   Main
                 </div>
@@ -22,21 +24,53 @@ class App extends Component {
             }
             scroll
           >
-            <Navigation >
-
-
-              <Link style={{ fontSize: "20px" }} to="/resume" >
-                <i className="fas fa-paper-plane"></i> Resume
+            <Navigation>
+              <Link
+                onMouseOver={event => {
+                  event.target.style.color = rollOverTextColor;
+                }}
+                onMouseOut={event => {
+                  event.target.style.color = normalTextColor;
+                }}
+                style={{ fontSize: "20px" }}
+                to="/resume"
+              >
+                 Resume 
+                 {/* <i className="fas fa-paperclip" /> */}
               </Link>
-              <Link style={{ fontSize: "20px" }} to="/projects">
-                <i className="fas fa-project-diagram"></i> Projects
+              <Link
+              onMouseOver={event => {
+                event.target.style.color = rollOverTextColor;
+              }}
+              onMouseOut={event => {
+                event.target.style.color = normalTextColor;
+              }}
+               style={{ fontSize: "20px" }} to="/projects">
+                {/* <i className="fas fa-flask"></i>  */}
+                Projects
               </Link>
-              <Link style={{ fontSize: "20px" }} to="/contact">
-                <i className="fas fa-phone-alt"></i> Contact
+              <Link 
+              onMouseOver={event => {
+                  event.target.style.color = rollOverTextColor;
+                }}
+                onMouseOut={event => {
+                  event.target.style.color = normalTextColor;
+                }}
+                 style={{ fontSize: "20px" }} to="/contact">
+                {/* <i className="fas fa-address-card"></i>  */}
+                Contact
               </Link>
-              <Link style={{ fontSize: "20px" }} to="/aboutme">
-                <i className="fas fa-address-card"></i> About Me</Link>
-
+              <Link 
+              onMouseOver={event => {
+                  event.target.style.color = rollOverTextColor;
+                }}
+                onMouseOut={event => {
+                  event.target.style.color = normalTextColor;
+                }}
+                 style={{ fontSize: "20px" }} to="/aboutme">
+                {/* <i className="fas fa-user-alt"></i>  */}
+                About Me
+              </Link>
             </Navigation>
           </Header>
 
@@ -51,7 +85,6 @@ class App extends Component {
                 }}
                 to="/"
               >
-
                 <div style={{ fontFamily: "Oxygen", fontSize: "23px" }}>
                   Main
                 </div>
@@ -59,13 +92,6 @@ class App extends Component {
             }
           >
             <Navigation style={{ backgroundColor: "#3155ac" }}>
-              <Link
-                id="test"
-                to="/aboutme"
-                style={{ color: "white", fontSize: "23px" }}
-              >
-                About Me
-              </Link>
               <Link to="/resume" style={{ color: "white", fontSize: "23px" }}>
                 Resume
               </Link>
@@ -76,15 +102,22 @@ class App extends Component {
               <Link to="/contact" style={{ color: "white", fontSize: "23px" }}>
                 Contact
               </Link>
+         
+              <Link
+                id="test"
+                to="/aboutme"
+                style={{ color: "white", fontSize: "23px" }}
+              >
+                About Me
+              </Link>
+         
             </Navigation>
           </Drawer>
 
           <Content>
-            <div className="page-content" />
             <Main />
           </Content>
         </Layout>
-
       </div>
     );
   }

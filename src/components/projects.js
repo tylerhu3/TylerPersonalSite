@@ -12,6 +12,8 @@ import {
   CardMenu,
   IconButton
 } from "react-mdl";
+import avatarPic from "../assets/ProfileHead.png";
+
 //The below imports picture directly from local host
 // import playerPic from '../assets/audioplayer.jpg';
 
@@ -23,7 +25,6 @@ class Projects extends Component {
     super(props);
     this.Ref = React.createRef();
   
-      
     this.state = { activeTab: 0 };
   }
   componentDidMount() {
@@ -51,7 +52,6 @@ class Projects extends Component {
               className="projects-grid"
             >
                 <Grid>
-            
                 <Cell phone={12} col={4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 {/* The below uses the pictures in local folder rather than url */}
@@ -302,6 +302,7 @@ class Projects extends Component {
             style={{ paddingTop: "2%", fontFamily: "Oxygen" }}
             className="projects-grid"
           >
+
             <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
               <div className="portfolio-container">
                 <CardTitle
@@ -309,8 +310,7 @@ class Projects extends Component {
                     textShadow: "2px 2px 4px #ffffff",
                     color: "#0",
                     height: "250px",
-                    background:
-                      "url(https://lh3.googleusercontent.com/Wz6i5Sn-ohvZfyQN3p-ohEQKEwAiSaKSMumxV4GD80fIaXEXirX1mL9wVWCB6j-9YiC6sxiWS9PejBOz1473bBPPWYlbnj5E2gPwAU2ugVCgt948y8cWoiJGUejq_m4qrLs4jKT-WPDWNfOFIWSrAzyVOKN5SM33iqHub-qPxFxQmiXzpUk70LkL_SptrFv4HMfNr9zq3NKOIEyT-oYUeqelyyOdwsa3lq-uxQBxlH_KyfGyZxLVXjUdokTW_hgBPICeITADHLajg0yp4N7qnGYWSOAkh_zC-kUdrMyrKlAnDgVw2ugVERoDuQDQp30929wASYdAkD7947FCYqhtRyUqW1ORpSo1IhtgxyvHZ_d-wZV-dROqjlOIEek_dY3uTdp9BAl1EdoDkqt1njSORquYbhuR1N1pDIiaIaFNp3YSrZWBsatm0M-JrEim_ZRcqBlA3NevzjYZPmK0KJY2XC8Gq3DDR5AGvD6-FS57K1fT4gkCkqU0yMyZLr4pmGmdyiP0YvJGJXAc1hLH57GzbpEUE1FODiVVbLNOnEbBuU57SVifriVQwAdrbjos7tBGuEWf0wsUDjbJYmD7n1LjevNEvcFLHPOEZxw7HImYvtFC0UBK0yTpAa-oBAA3ACfVg8kiCmPUL2bpI2WsotodgBM2yUE0ZcnejICBmVLb28l9acb1mD-Tpp2P=w1504-h1364-no) center / cover"
+                    background: "./../assets/ProfileHead.png"
                   }}
                 >
                   Profile Page
@@ -319,12 +319,15 @@ class Projects extends Component {
 
               <CardText>
                 Personal website made with ReactJS, ReactMDL, VantaJS, NodeJS.
+                
               </CardText>
               <CardActions border>
                 <Button
                   colored
+                  
                   href="https://github.com/tylerhu3/TylerPersonalSite"
                   target="_blank"
+                  
                 >
                   GitHub
                 </Button>
