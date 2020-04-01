@@ -24,20 +24,18 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.Ref = React.createRef();
-  
     this.state = { activeTab: 0 };
   }
   componentDidMount() {
-    this.effect = window.VANTA.NET({
-      el: "#netforProjects",
-      color: 0xffffff,
-      backgroundColor: 0x3155ac,
-      points: 7.0,
-      maxDistance: 25.0
-    });
+    this.handleWindowSizeChange();
+    window.addEventListener("resize", this.handleWindowSizeChange);
   }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   componentWillUnmount() {
-    if (this.effect) this.effect.destroy();
   }
 
   toggleCategories() {
@@ -52,7 +50,7 @@ class Projects extends Component {
               className="projects-grid"
             >
                 <Grid>
-                <Cell phone={12} col={4}>
+                <Cell col={(this.state.width <= 1000) ? 12 : 4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 {/* The below uses the pictures in local folder rather than url */}
                 {/* <img alt="test" style={{width: "100%", height:"90%", background: "center / cover"}} src={playerPic}></img> */}
@@ -110,7 +108,7 @@ class Projects extends Component {
 
 
 
-                  <Cell phone={12} col={4}>
+                  <Cell col={(this.state.width <= 1000) ? 12 : 4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 <CardTitle
                   style={{
@@ -158,20 +156,7 @@ class Projects extends Component {
               </Card>
 
 </Cell>
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <Cell phone={12} col={4}>
+              <Cell col={(this.state.width <= 1000) ? 12 : 4}>
               <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
                 <CardTitle
                   style={{
@@ -222,7 +207,7 @@ class Projects extends Component {
 
 
 
-            <Cell col={12} phone={4}>
+            <Cell col={12}>
             <div
               className="mdl-shadow--4dp  mdl-color--white "
               style={{marginLeft:"5%", marginTop: "275px", width:"90%"}}

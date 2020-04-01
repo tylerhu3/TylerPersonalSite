@@ -32,8 +32,6 @@ class Resume extends Component {
             <p>(510) 701-7525</p>
             <h5>Email</h5>
             <p>tylerhu8@gmail.com</p>
-            <h5>Web</h5>
-            <p>Coming soon...</p>
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
             <h3>Skills</h3>
             
