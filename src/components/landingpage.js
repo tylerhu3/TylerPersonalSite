@@ -24,13 +24,14 @@ import WAVES from "vanta/dist/vanta.waves.min";
 import avatarPic from "../assets/ProfileHead.png";
 
 class Landing extends Component {
-  constructor() {
-    super();
-    this.vantaRef = React.createRef(); //for animated background
-    this.state = {
-      width: window.innerWidth
-    };
-  }
+      constructor() {
+        super();
+        this.vantaRef = React.createRef(); //for animated background
+        this.state = { 
+          
+          width: window.innerWidth
+        };
+      }
 
   componentDidMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
@@ -83,7 +84,7 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "cyan";
+            event.target.style.color = "black";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
@@ -97,7 +98,7 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "cyan";
+            event.target.style.color = "black";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
@@ -110,7 +111,7 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "cyan";
+            event.target.style.color = "black";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
@@ -125,7 +126,7 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "cyan";
+            event.target.style.color = "black";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";

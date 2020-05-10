@@ -5,7 +5,7 @@ import Main from "./components/main";
 import { Link } from "react-router-dom";
 class App extends Component {
   render() {
-    const rollOverTextColor = "cyan";
+    const rollOverTextColor = "black";
     const normalTextColor = "white";
     return (
       <div style={{ fontFamily: "Oxygen", width: "100%", height: "100%" }}>
