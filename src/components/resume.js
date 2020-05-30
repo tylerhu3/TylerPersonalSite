@@ -9,7 +9,7 @@ class Resume extends Component {
     return (
       <div style={{ fontFamily: "Oxygen" }}>
         <Grid>
-          <Cell col={4}>
+          <Cell tablet={12} phone={12} col={4}>
             <div style={{ textAlign: "center" }}>
               <img
                 src={avatarPic}
@@ -48,7 +48,7 @@ class Resume extends Component {
             <Skills skill="MongoDB/NoSQL" progress={50} />
           </Cell>
 
-          <Cell className="resume-right-col" col={8}>
+          <Cell className="resume-right-col" tablet={12} phone={12}  col={8}>
             <h3>Education</h3>
             <Education
               startYear="Aug 2017"

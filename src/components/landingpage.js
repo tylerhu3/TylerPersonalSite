@@ -84,10 +84,12 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "black";
+            // event.target.style.color = "black";
+            event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
+            event.target.style.textShadow = "";
           }}
         >
           <i className="fas fa-graduation-cap" aria-hidden="true" />
@@ -98,10 +100,12 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "black";
+            // event.target.style.color = "black";
+             event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
+            event.target.style.textShadow = "";
           }}
         >
           <i class="fab fa-linkedin"></i>
@@ -111,10 +115,12 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "black";
+            // event.target.style.color = "black";
+             event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
+            event.target.style.textShadow = "";
           }}
         >
           <i class="fab fa-github-alt"></i>
@@ -126,10 +132,12 @@ class Landing extends Component {
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
-            event.target.style.color = "black";
+            // event.target.style.color = "black";
+             event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
+            event.target.style.textShadow = "";
           }}
         >
           <i class="fas fa-paperclip"></i>

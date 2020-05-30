@@ -51,7 +51,18 @@ class Projects extends Component {
             >
                 <Grid>
                 <Cell col={(this.state.width <= 1000) ? 12 : 4}>
-              <Card shadow={10} style={{ minWidth: "450", margin: "auto" }}>
+              <Card 
+
+
+
+              // Todo: make a new css for projects where onHover will create a bigger shadow than normal 
+
+
+
+
+
+              shadow={10}
+              style={{ minWidth: "450", margin: "auto" }}>
                 {/* The below uses the pictures in local folder rather than url */}
                 {/* <img alt="test" style={{width: "100%", height:"90%", background: "center / cover"}} src={playerPic}></img> */}
                 <CardTitle
@@ -64,7 +75,7 @@ class Projects extends Component {
                   }}
                 >
                   TODO List Widget
-                </CardTitle>pwd
+                </CardTitle>
                 <CardText>
                   Simple TODO List Widget made for the Android 6 and below. It's
                   resizable and items are saved to a json file. Future plans:
@@ -99,12 +110,6 @@ class Projects extends Component {
                 </CardMenu>
               </Card>
                   </Cell>
-
-
-
-
-
-
 
 
 
