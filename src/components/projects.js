@@ -12,7 +12,6 @@ import {
   CardMenu,
   IconButton
 } from "react-mdl";
-import avatarPic from "../assets/ProfileHead.png";
 
 //The below imports picture directly from local host
 // import playerPic from '../assets/audioplayer.jpg';
