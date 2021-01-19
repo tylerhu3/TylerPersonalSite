@@ -22,7 +22,7 @@ class Resume extends Component {
             <h4 style={{ color: "grey" }}>Software Engineer</h4>
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
             <p>
-            I recently graduated from University of California, Santa Cruz with a BS in Computer Science and I am a seven-year veteran from the United States Air Force.
+            I graduated from University of California, Santa Cruz with a BS in Computer Science and I am a seven-year veteran from the United States Air Force.
             I believe my discipline, attention to detail, academic strengths, and passion for creative solutions will be a positive addition to your company.
             </p>
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
@@ -49,37 +49,35 @@ class Resume extends Component {
           </Cell>
 
           <Cell className="resume-right-col" tablet={12} phone={12}  col={8}>
-            <h3>Education</h3>
-            <Education
-              startYear="Aug 2017"
-              endYear="June 2019"
-              schoolName="University of California, Santa Cruz - Santa Cruz, CA"
-              degree="Computer Science BS"
-              highlights="Graduated with 3.22 GPA, Member of Association for Computing Machinery."
-            />
-
-            <Education
-              startYear="Jan 2015"
-              endYear="May 2017"
-              schoolName="Chabot Community College - Hayward, CA"
-              degree="Computer Science and Math AS"
-              highlights=" 
-              Graduated with 3.45 GPA,
-              Two Time Recipient of Veteran's Scholarship, 
-              Dean's List Spring 2017              
-              "
-            />
-
-            <Education
-              startYear="Oct 2007"
-              endYear="May 2012"
-              schoolName="Community College of The Air Force - Montgomery, AL"
-              degree="Applied Sciences AS"
-              highlights="Graduated with 3.67 GPA, Honors student.   
-              "
-            />
-            <hr style={{ borderTop: "3px solid #ffffff" }} />
+            
             <h3>Experience</h3>
+
+            <Experience
+              startYear="March 2020"
+              endYear="Present"
+              jobName="Android Engineer"
+              company="Infinite Options, San Jose, CA"
+              jobDescription="
+              Worked on location nearby agents with respect to the customer with the ability to navigate to the agent and detect fraud.
+              Fixed bugs with code, design patterns and miscellaneous occurrences during project.
+              Tested the application on multiple android targets and debugged the issues that were found.
+              Developed the database wrapper functions for data staging and modeled the data objects relevant to the mobile application.
+              "
+            />
+
+            <Experience
+              startYear="Jan 2020"
+              endYear="March 2020"
+              jobName="Software Developer Internship"
+              company="Infinite Options, San Jose, CA"
+              jobDescription="
+              Design backend server API adhering to RESTful architecture; implemented with NodeJS, Express.
+              Design frontend website, implemented with ReactJS, Bootstrap 4, React Material Design.
+              Connected Google Calendar API and Firebase Firestore to our backend server required for core functionality of webpage
+              
+              "
+            />
+
             <Experience
               startYear="Aug 2016"
               endYear="May 2017"
@@ -113,8 +111,42 @@ class Resume extends Component {
               
               "
             />
+            <hr style={{ borderTop: "3px solid #ffffff" }} />
+
+      <h3>Education</h3>
+            <Education
+              startYear="Aug 2017"
+              endYear="June 2019"
+              schoolName="University of California, Santa Cruz - Santa Cruz, CA"
+              degree="Computer Science BS"
+              highlights="Graduated with 3.22 GPA, Member of Association for Computing Machinery."
+            />
+
+            <Education
+              startYear="Jan 2015"
+              endYear="May 2017"
+              schoolName="Chabot Community College - Hayward, CA"
+              degree="Computer Science and Math AS"
+              highlights=" 
+              Graduated with 3.45 GPA,
+              Two Time Recipient of Veteran's Scholarship, 
+              Dean's List Spring 2017              
+              "
+            />
+
+            <Education
+              startYear="Oct 2007"
+              endYear="May 2012"
+              schoolName="Community College of The Air Force - Montgomery, AL"
+              degree="Applied Sciences AS"
+              highlights="Graduated with 3.67 GPA, Honors student.   
+              "
+            />
+            <hr style={{ borderTop: "3px solid #ffffff" }} />
 
           <h3>Technologies</h3>
+
+          <Skills skill="Bash Shell" progress={85} />
           <Skills skill="Github" progress={85} />
           <Skills skill="MS Visual Code" progress={79} />
           <Skills skill="Android Studio" progress={78} />
