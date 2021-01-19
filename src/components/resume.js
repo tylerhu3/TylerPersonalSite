@@ -56,7 +56,7 @@ class Resume extends Component {
               startYear="March 2020"
               endYear="Present"
               jobName="Android Engineer"
-              company="Infinite Options, San Jose, CA"
+              company="Fidelity, San Francisco, CA"
               jobDescription="
               Worked on location nearby agents with respect to the customer with the ability to navigate to the agent and detect fraud.
               Fixed bugs with code, design patterns and miscellaneous occurrences during project.
