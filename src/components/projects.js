@@ -56,10 +56,6 @@ class Projects extends Component {
 
               // Todo: make a new css for projects where onHover will create a bigger shadow than normal 
 
-
-
-
-
               shadow={10}
               style={{ minWidth: "450", margin: "auto" }}>
                 {/* The below uses the pictures in local folder rather than url */}

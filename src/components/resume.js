@@ -60,7 +60,7 @@ class Resume extends Component {
               jobDescription="
               Worked on location nearby agents with respect to the customer with the ability to navigate to the agent and detect fraud.
               Fixed bugs with code, design patterns and miscellaneous occurrences during project.
-              Tested the application on multiple android targets and debugged the issues that were found.
+              Tested the application on multiple android targets and debugged the issues found.
               Developed the database wrapper functions for data staging and modeled the data objects relevant to the mobile application.
               "
             />
@@ -71,10 +71,8 @@ class Resume extends Component {
               jobName="Software Developer Internship"
               company="Infinite Options, San Jose, CA"
               jobDescription="
-              Design backend server API adhering to RESTful architecture; implemented with NodeJS, Express.
-              Design frontend website, implemented with ReactJS, Bootstrap 4, React Material Design.
-              Connected Google Calendar API and Firebase Firestore to our backend server required for core functionality of webpage
-              
+              Full Stack Developer: design and implement backend server API (NodeJS, Express), frontend website (ReactJS, Bootstrap 4, React Material Design) for
+              Project Caitlin(https://www.youtube.com/watch?v=Uqqi5AJw3l8). Connected Google Calendar API and Firebase Firestore to our backend server required for core functionality of webpage
               "
             />
 
