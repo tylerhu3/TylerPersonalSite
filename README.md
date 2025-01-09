@@ -12,4 +12,4 @@ To run the website locally:
 
 
 Current link for website is:
-tylerhu.netlify.com
+tylerhu.netlify.app
