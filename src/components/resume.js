@@ -19,11 +19,10 @@ class Resume extends Component {
               <h2 style={{ paddingTop: "0.5 em" }}>Tyler Hu</h2>
             </div>
             <br></br>
-            <h4 style={{ color: "grey" }}>Software Engineer</h4>
+            <h4 style={{ color: "grey" }}>Senior Software Engineer</h4>
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
             <p>
-            I graduated from University of California, Santa Cruz with a BS in Computer Science and I am a seven-year veteran from the United States Air Force.
-            I believe my discipline, attention to detail, academic strengths, and passion for creative solutions will be a positive addition to your company.
+            Experienced Software Engineer with 5+ years of expertise in developing high-performance mobile/front-end applications. Proficient in Kotlin, Java, Coroutines, Dagger, Jetpack Compose, ReactJs, and NodeJS. Proven track record in optimizing app performance, enhancing user experience, and delivering robust, stable, and scalable software solutions. Adept at collaborating with cross-functional teams to achieve business goals and drive continuous improvement.
             </p>
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
             <h5>Address</h5>
@@ -35,17 +34,18 @@ class Resume extends Component {
             <hr style={{ borderTop: "3px solid #000", width: "100%" }} />
             <h3>Skills</h3>
             
-            <Skills skill="Python" progress={91} />
-            <Skills skill="Java" progress={87} />
-            <Skills skill="Android" progress={84} />
-            <Skills skill="C++" progress={83} />
-            <Skills skill="Javascript" progress={80} />
-            <Skills skill="HTML/CSS" progress={75} />
-            <Skills skill="NodeJS" progress={70} />
-            <Skills skill="MySQL" progress={70} />
-            <Skills skill="Express" progress={70} />
-            <Skills skill="React" progress={60} />
-            <Skills skill="MongoDB/NoSQL" progress={50} />
+            <Skills skill="Kotlin / Java" progress={95} />
+            <Skills skill="Android / Jetpack Compose" progress={90} />
+            <Skills skill="Dagger / Room / Coroutines" progress={85} />
+            <Skills skill="RxJava" progress={85} />
+            <Skills skill="Javascript / Typescript" progress={85} />
+            <Skills skill="ReactJS / NodeJS" progress={80} />
+            <Skills skill="HTML / CSS / XML" progress={80} />
+            <Skills skill="RESTful APIs / GraphQL" progress={80} />
+            <Skills skill="MySQL / NoSQL / SQLite" progress={75} />
+            <Skills skill="Python / C++ / C" progress={75} />
+            <Skills skill="Flutter / React-Native" progress={60} />
+            <Skills skill="Angular / SwiftUI" progress={50} />
           </Cell>
 
           <Cell className="resume-right-col" tablet={12} phone={12}  col={8}>
@@ -53,101 +53,114 @@ class Resume extends Component {
             <h3>Experience</h3>
 
             <Experience
-              startYear="March 2020"
+              startYear="Nov 2024"
               endYear="Present"
-              jobName="Android Engineer"
-              company="Fidelity Information Services, San Francisco, CA"
+              jobName="Senior Software Engineer"
+              company="Insulet, San Diego, CA"
               jobDescription="
-              Worked on location nearby agents with respect to the customer with the ability to navigate to the agent and detect fraud.
-              Fixed bugs with code, design patterns and miscellaneous occurrences during project.
-              Tested the application on multiple android targets and debugged the issues found.
-              Developed the database wrapper functions for data staging and modeled the data objects relevant to the mobile application.
+              • Designed and developed high-quality Android mobile applications and SDKs using Java, Kotlin, and KMM, delivering medical-grade solutions for patient and device-centric products.
+              • Collaborated with cross-functional teams to define, design, and deploy new features and software releases, ensuring alignment with customer and market needs.
+              • Architected and built next-generation cloud-based mobile application platforms, supporting scalable and secure solutions for future healthcare products.
+              "
+            />
+
+            <Experience
+              startYear="May 2022"
+              endYear="Nov 2024"
+              jobName="Software Engineer"
+              company="Amazon, Sunnyvale, CA"
+              jobDescription="
+              • Refactored substantial portions of the codebase to properly implement MVVM architecture, improving code organization, testability, and maintainability.
+              • Managed the end-to-end software development lifecycle for Amazon Kids and Amazon Kids Browser app, collaborating with 4+ cross-functional teams, implement 4 new features for 1,000,000+ users leading to a 10% increase in revenue and a 10% boost in engagement.
+              • Implemented proactive monitoring and automation, utilizing 30+ AWS CloudWatch metrics and alarms, ensuring 100% application uptime.
+              • Leveraged customer metrics to drive continuous app improvements, implementing 20+ updates to functionality and design, aligning with customer needs and business goals.
+              • Migrated key components of Kids Browser app from traditional Kotlin + XML to Jetpack Compose, enhancing UI development efficiency and maintaining consistency.
+              • Implemented 200+ unit tests and debugged 20+ critical application issues, ensuring app stability and performance.
+              "
+            />
+
+            <Experience
+              startYear="Aug 2023"
+              endYear="Sep 2023"
+              jobName="Software Engineer (Volunteer)"
+              company="Alameda Food Bank, Alameda, CA"
+              jobDescription="
+              • Developed a robust ticketing system for the Alameda Food Bank using Express.js and SQLite3, resulting in a 30% increase in operational efficiency.
+              • Designed and implemented 6 RESTful APIs to enable seamless communication between frontend and backend components, enhancing system functionality.
+              • Conducted 5 comprehensive training sessions and provided ongoing support, empowering 20+ volunteer members to effectively utilize the system.
+              "
+            />
+
+            <Experience
+              startYear="Mar 2020"
+              endYear="May 2022"
+              jobName="Software Engineer"
+              company="Fidelity, San Francisco, CA"
+              jobDescription="
+              • Developed new features for proprietary banking apps on Android phones and tablets, enhancing user experience and functionality for 500,000+ users.
+              • Automated company app build and test processes through Jenkins, reducing build times by 10% and improving efficiency.
+              • Collaborated with 3 Software Architects to determine technical feasibility and best approaches for 20+ customer requests.
+              • Work on location tracking agents, analyze user habits, summarize data in user-friendly format, log and connect external fraud detection SDK.
+              • Implemented 200+ unit tests and debugged 20+ critical application issues, ensuring app stability and performance.
               "
             />
 
             <Experience
               startYear="Jan 2020"
-              endYear="March 2020"
+              endYear="Mar 2020"
               jobName="Software Developer Internship"
               company="Infinite Options, San Jose, CA"
               jobDescription="
-              Full Stack Developer: design and implement backend server API (NodeJS, Express), frontend website (ReactJS, Bootstrap 4, React Material Design) for
-              Project Caitlin(https://www.youtube.com/watch?v=Uqqi5AJw3l8). Connected Google Calendar API and Firebase Firestore to our backend server required for core functionality of webpage
-              "
-            />
-
-            <Experience
-              startYear="Aug 2016"
-              endYear="May 2017"
-              jobName="Computer Science and Math Tutor"
-              company="Chabot Community College, Hayward, CA"
-              jobDescription="Tutor students in subjects: Multi-variable Calculus, Java, C++, identify lagging skills and correct weaknesses.
-              Explained concepts in caring and encouraging environment to help students thrive and learn.
-              "
-            />
-
-            <Experience
-              startYear="Jun 2015"
-              endYear="Mar 2016"
-              jobName="Vaccine Customer Service and Rig Manager"
-              company="Vetco, Newark, CA"
-              jobDescription="Perform administration paperwork for pet vaccinations, educated customers on proper yearly pet vaccinations helping reduce overall common pet deaths.
-              	Consistently deliver vacines on time and worked extended hours to meet costumer's needs.
+              • Created, modified, maintained SQL procedures to consume data from multiple excel sheet, analyze customer data, identify best-selling product, tracked trends of Key Performance Indicators.
+              • Designed backend server API adhering to RESTful architecture then implement with NodeJS, Express.
+              • Designed frontend website, then implement with ReactJS, connected Google Calendar API and Firebase Firestore to our backend server.
               "
             />
 
             <Experience
               startYear="Oct 2007"
               endYear="Jul 2014"
-              jobName="Aerospace Equipment Mechanic"
-              company="United States Air Force, Misawa, Japan"
+              jobName="Staff Sergeant and Mechanic"
+              company="United States Air Force, Misawa AB, Japan"
               jobDescription="
-              Staff Sergeant/ Firstline Supervisor on swing shift. 
-              Supported training and contingency missions of 5 different aircraft: A-10, F-16E, C-130, B-1, J-Star.
-              Security Escort for third country personnel in Republic of Korea.
-              Performs maintenance and inspections over 1.5K pieces of aircraft equipment valued at $32.3M.
-              
+              • Performed maintenance and inspections on over 1.5K pieces of aircraft equipment valued at $32.3M.
+              • Security Escort for third country personnel in Republic of Korea.
+              • Supported training and contingency missions of 5 different aircraft: A-10, F-16E, C-130, B-1, J-Star.
               "
             />
             <hr style={{ borderTop: "3px solid #ffffff" }} />
 
       <h3>Education</h3>
             <Education
-              startYear="Aug 2017"
-              endYear="June 2019"
+              startYear="Sep 2017"
+              endYear="Sep 2019"
               schoolName="University of California, Santa Cruz - Santa Cruz, CA"
-              degree="Computer Science BS"
+              degree="Bachelor of Science in Computer Science"
               highlights="Graduated with 3.22 GPA, Member of Association for Computing Machinery."
             />
 
             <Education
               startYear="Jan 2015"
-              endYear="May 2017"
+              endYear="Sep 2017"
               schoolName="Chabot Community College - Hayward, CA"
-              degree="Computer Science and Math AS"
+              degree="Associate of Science in Math and Computer Science"
               highlights=" 
-              Graduated with 3.45 GPA,
-              Two Time Recipient of Veteran's Scholarship, 
-              Dean's List Spring 2017              
-              "
-            />
-
-            <Education
-              startYear="Oct 2007"
-              endYear="May 2012"
-              schoolName="Community College of The Air Force - Montgomery, AL"
-              degree="Applied Sciences AS"
-              highlights="Graduated with 3.67 GPA, Honors student.   
+              Graduated with 3.45 GPA, Two Time Recipient of Veteran's Scholarship, Dean's List Spring 2017              
               "
             />
             <hr style={{ borderTop: "3px solid #ffffff" }} />
 
-          <h3>Technologies</h3>
+          <h3>Frameworks / Tools</h3>
 
-          <Skills skill="Bash Shell" progress={85} />
-          <Skills skill="Github" progress={85} />
-          <Skills skill="MS Visual Code" progress={79} />
-          <Skills skill="Android Studio" progress={78} />
+          <Skills skill="Android Studio / IntelliJ" progress={95} />
+          <Skills skill="Git / Github" progress={90} />
+          <Skills skill="Unix Shell Scripting / Linux" progress={85} />
+          <Skills skill="System Design" progress={85} />
+          <Skills skill="JIRA / Agile Principles" progress={85} />
+          <Skills skill="Gradle / Jenkins" progress={80} />
+          <Skills skill="JUnit / Jest" progress={80} />
+          <Skills skill="AWS" progress={70} />
+          <Skills skill="Jupyter Notebook" progress={70} />
           
           </Cell>
         </Grid>

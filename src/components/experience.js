@@ -13,7 +13,12 @@ class Experience extends Component {
         <Cell col={8}>
           <h4 style={{ marginTop: "0px", marginBottom:"0px" }}>{this.props.jobName}</h4>
           <h6 style={{ marginTop: "0px" }}>{this.props.company}</h6>
-          <p>{this.props.jobDescription}</p>
+          <p>
+            {this.props.jobDescription && this.props.jobDescription.split('•').map((item, key) => {
+              if(item.trim() === '') return null;
+              return <span key={key}>• {item.trim()}<br/></span>
+            })}
+          </p>
         </Cell>
       </Grid>
     );

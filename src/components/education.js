@@ -13,7 +13,12 @@ class Education extends Component {
         <Cell col={8}>
           <h4 style={{ marginTop: "0px", marginBottom: "0px" }}>{this.props.schoolName}</h4>
           <h6 style={{ marginTop: "0px" }}>{this.props.degree}</h6>
-          <p>{this.props.highlights}</p>
+          <p>
+            {this.props.highlights && this.props.highlights.split('\n').map((item, key) => {
+              if(item.trim() === '') return null;
+              return <span key={key}>{item.trim()}<br/></span>
+            })}
+          </p>
           
         </Cell>
       </Grid>
