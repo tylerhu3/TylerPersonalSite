@@ -24,14 +24,14 @@ import WAVES from "vanta/dist/vanta.waves.min";
 import avatarPic from "../assets/ProfileHead.png";
 
 class Landing extends Component {
-      constructor() {
-        super();
-        this.vantaRef = React.createRef(); //for animated background
-        this.state = { 
-          
-          width: window.innerWidth
-        };
-      }
+  constructor() {
+    super();
+    this.vantaRef = React.createRef(); //for animated background
+    this.state = {
+
+      width: window.innerWidth
+    };
+  }
 
   componentDidMount() {
     window.addEventListener("resize", this.handleWindowSizeChange);
@@ -101,7 +101,7 @@ class Landing extends Component {
           target="_blank"
           onMouseOver={event => {
             // event.target.style.color = "black";
-             event.target.style.textShadow = "2px 2px 4px #000000";
+            event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
@@ -116,7 +116,7 @@ class Landing extends Component {
           target="_blank"
           onMouseOver={event => {
             // event.target.style.color = "black";
-             event.target.style.textShadow = "2px 2px 4px #000000";
+            event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
@@ -126,14 +126,14 @@ class Landing extends Component {
           <i class="fab fa-github-alt"></i>
         </a>
         <a
-          href="https://www.dropbox.com/s/nwpdimybd9mned6/Tyler_Hu_Resume.pdf?dl=0"
+          href="https://www.dropbox.com/scl/fi/ly15ia1hafcu5ypqecrhs/Tyler_Hu_Resume_Master.docx?rlkey=h9xu4oase9m7p7wkkd88lw3x3&st=76r7udma&dl=0"
           alt="Resume"
           title="My Resume"
           rel="noopener noreferrer"
           target="_blank"
           onMouseOver={event => {
             // event.target.style.color = "black";
-             event.target.style.textShadow = "2px 2px 4px #000000";
+            event.target.style.textShadow = "2px 2px 4px #000000";
           }}
           onMouseOut={event => {
             event.target.style.color = "#FFFFFF";
