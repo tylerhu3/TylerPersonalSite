@@ -137,12 +137,12 @@ class About extends Component {
     const backgroundImages = (
       <>
         <style>{bouncingStyles}</style>
-        <img src={process.env.PUBLIC_URL + '/salsaPic.webp'} className="bouncing-img img-1" alt="Salsa" />
+        {/* <img src={process.env.PUBLIC_URL + '/salsaPic.webp'} className="bouncing-img img-1" alt="Salsa" />
         <img src={process.env.PUBLIC_URL + '/b1Pic.jfif'} className="bouncing-img img-2" alt="B1" />
         <img src={process.env.PUBLIC_URL + '/snowBoardPic.webp'} className="bouncing-img img-3" alt="Snowboard" />
         <img src={process.env.PUBLIC_URL + '/salsaPic.webp'} className="bouncing-img img-4" alt="Salsa" />
         <img src={process.env.PUBLIC_URL + '/b1Pic.jfif'} className="bouncing-img img-5" alt="B1" />
-        <img src={process.env.PUBLIC_URL + '/snowBoardPic.webp'} className="bouncing-img img-6" alt="Snowboard" />
+        <img src={process.env.PUBLIC_URL + '/snowBoardPic.webp'} className="bouncing-img img-6" alt="Snowboard" /> */}
       </>
     );
 
